@@ -1,25 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+// import { Head } from "./components/Head";
+import { Provider } from "react-redux";
+import { reducer } from "./store/redux";
+import { createStore } from "redux";
+
+import HomeScreen from "./screens/HomeScreen";
+
+// The initial state of our store when the app loads.
+// Usually you would fetch this from a server
+
+// We export the constructed redux store
+const store = createStore(reducer);
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <HomeScreen />
+    </Provider>
   );
 }
 
