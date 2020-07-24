@@ -1,0 +1,15 @@
+/* TODO: decide what convention we want to use for CSS, whether it's CSS modules, the "styled"
+   library, or something else. Below is a temporary solution. */
+.SurroundingDashes {
+  display: flex;
+  flex-direction: row;
+  font-size: large;
+}
+.SurroundingDashes:before, .SurroundingDashes:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid #000;
+  margin: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+}

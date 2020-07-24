@@ -2,8 +2,8 @@ import React from "react";
 import "./App.css";
 // import { Head } from "./components/Head";
 import { Provider } from "react-redux";
-import { reducer } from "./store/redux";
-import { createStore } from "redux";
+// import { reducer } from "./store/redux";
+// import { createStore } from "redux";
 
 import HomeScreen from "./screens/HomeScreen";
 
@@ -11,13 +11,13 @@ import HomeScreen from "./screens/HomeScreen";
 // Usually you would fetch this from a server
 
 // We export the constructed redux store
-const store = createStore(reducer);
+// const store = createStore(reducer);
 
 function App() {
   return (
-    <Provider store={store}>
+    // <Provider store={store}>
       <HomeScreen />
-    </Provider>
+    // </Provider>
   );
 }
 
