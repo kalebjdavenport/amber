@@ -82,6 +82,8 @@ class Firebase {
    * @param password the unhashed/unsalted password of the user trying to login. This **will not
    * ever** be stored.
    * @param email the username of the user trying to login.
+   * @param onError the callback for when something goes wrong with authentication
+   * @param onSuccess the callback for when the authentication successfully completes
    */
   login(password: string, email: string, onError: VoidFunction, onSuccess: VoidFunction): void {
     this.auth.signInWithEmailAndPassword(email, password)
@@ -94,6 +96,8 @@ class Firebase {
    * @param password the unhashed/unsalted password of the user trying to login. This **will not
    * ever** be stored.
    * @param email the username of the user trying to login.
+   * @param onError the callback for when something goes wrong with authentication
+   * @param onSuccess the callback for when the authentication successfully completes
    */
   signup(password: string, email: string, onError: VoidFunction, onSuccess: VoidFunction): void {
     this.auth.createUserWithEmailAndPassword(email, password)
