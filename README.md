@@ -43,10 +43,10 @@ using the official tutorials linked here: [Official
 Tutorial](https://www.learnstorybook.com/intro-to-storybook)
 
 ## Styling
-This project uses TailwindCSS for styling. Specifically, this project makes use of the `twin.macro`
-library that enables using Tailwind with [Styled Components](https://styled-components.com/). The
-below example illustrates how to style an object with Styled Components and how to use Tailwind
-classes with your components.
+This project uses TailwindCSS ([documentation](https://tailwindcss.com/docs/)) for styling. 
+Specifically, this project makes use of the `twin.macro` library that enables using Tailwind with
+[Styled Components](https://styled-components.com/). The below example illustrates how to style an
+object with Styled Components and how to use Tailwindclasses with your components.
 
 ```
 import React from 'react';
@@ -68,10 +68,34 @@ const MyDiv = () => {
 export default MyDiv;
 ```
 
-See more about Styled Components at the link above. There are other ways to style elements such as
-styling a custom component instead of styling a vanilla HTML element.
+Alternatively, you can add your Tailwind classes inline shown below.
+
+```
+import React from 'react';
+import tw from 'twin.macro';
+
+const MyDiv = () => {
+  return (
+    <input style={tw`w-full shadow bg-black`} />
+  );
+}
+
+export default MyDiv;
+```
+
+See more about twin.macro here:
+[https://github.com/ben-rogerson/twin.macro](https://github.com/ben-rogerson/twin.macro).
+Specifically take note of the section "How it Works" and how usage of tw is ultimately compiled
+to normal CSS so you can use it anywhere you'd use normal CSS like in the style prop of an HTML
+element (as shown above). 
 
 ## Backend
 This front-end connects to the Amber backend via a JSON API, documented at this [GitHub
 link](https://github.com/garrrettt/Amber-backend/). Amber-backend is currently private but will soon
 be public. Until then, make sure you have access to the repo.
+
+## Code Style and General Precautions
+As people work on Amber, here are some guidelines you should try to follow:
+1. 100 character limit for readability
+2. No TODOs committed to master
+3. No API keys or secret keys in anywhere except for .env files.
