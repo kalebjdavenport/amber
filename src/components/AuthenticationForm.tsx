@@ -4,10 +4,23 @@ import theme from '../theme';
 import SignUp from './SignUp';
 import SignIn from './SignIn';
 import { Authenticator } from '../auth/Authenticator';
+import styled from 'styled-components';
 
 interface AuthenticatorFormProps {
   authenticator: Authenticator;
 }
+
+// Can't put these styles inline because media queries can't be inline in React. Media queries
+// typically go in other CSS files that you import into a component file, but since we're using the
+// styled library, we can just put the queries here.
+const RowThatBreaksToCol = styled.div`
+  ${tw`
+    flex
+    flex-col
+    sm:flex-col 
+    md:flex-row
+  `}
+`;
 
 /**
  * The model that allows a user to either login or sign up. 
@@ -31,7 +44,7 @@ const AuthenticationForm = ({ authenticator } : AuthenticatorFormProps) => {
         <h1>Welcome to Project Amber</h1>
         <div>Let’s upload your local history to the internet and make it easy to learn and explore!</div>
       </div>
-      <div style={tw`flex flex-row `}>
+      <RowThatBreaksToCol>
         <SignUp
           onSuccess={() => {}}
           onMessage={addMessage}
@@ -40,7 +53,7 @@ const AuthenticationForm = ({ authenticator } : AuthenticatorFormProps) => {
           onSuccess={() => {}}
           onMessage={addMessage}
           authenticator={authenticator} />
-      </div>
+      </RowThatBreaksToCol>
     </div>
   );
 }
