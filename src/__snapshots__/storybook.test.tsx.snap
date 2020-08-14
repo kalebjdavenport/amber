@@ -1,1191 +1,1347 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots InboxScreen Default 1`] = `
+exports[`Storyshots AddTags Default 1`] = `
 <div
   style={
     Object {
-      "padding": "3rem",
+      "display": "flex",
+      "flexDirection": "column",
     }
   }
 >
   <div
-    className="page lists-show"
-  >
-    <nav>
-      <h1
-        className="title-page"
-      >
-        <span
-          className="title-wrapper"
-        >
-          Taskbox
-        </span>
-      </h1>
-    </nav>
-    <div
-      className="list-items"
-    >
-      <div
-        className="list-item TASK_INBOX"
-      >
-        <label
-          className="checkbox"
-        >
-          <input
-            checked={false}
-            disabled={false}
-            name="Something"
-            type="checkbox"
-          />
-          <span
-            className="checkbox-custom"
-            onClick={[Function]}
-          />
-        </label>
-        <div
-          className="title"
-        >
-          <input
-            placeholder="Input title"
-            readOnly={true}
-            type="text"
-            value="Something"
-          />
-        </div>
-        <div
-          className="actions"
-          onClick={[Function]}
-        >
-          <a
-            onClick={[Function]}
-          >
-            <span
-              className="icon-star"
-            />
-          </a>
-        </div>
-      </div>
-      <div
-        className="list-item TASK_INBOX"
-      >
-        <label
-          className="checkbox"
-        >
-          <input
-            checked={false}
-            disabled={false}
-            name="Something more"
-            type="checkbox"
-          />
-          <span
-            className="checkbox-custom"
-            onClick={[Function]}
-          />
-        </label>
-        <div
-          className="title"
-        >
-          <input
-            placeholder="Input title"
-            readOnly={true}
-            type="text"
-            value="Something more"
-          />
-        </div>
-        <div
-          className="actions"
-          onClick={[Function]}
-        >
-          <a
-            onClick={[Function]}
-          >
-            <span
-              className="icon-star"
-            />
-          </a>
-        </div>
-      </div>
-      <div
-        className="list-item TASK_INBOX"
-      >
-        <label
-          className="checkbox"
-        >
-          <input
-            checked={false}
-            disabled={false}
-            name="Something else"
-            type="checkbox"
-          />
-          <span
-            className="checkbox-custom"
-            onClick={[Function]}
-          />
-        </label>
-        <div
-          className="title"
-        >
-          <input
-            placeholder="Input title"
-            readOnly={true}
-            type="text"
-            value="Something else"
-          />
-        </div>
-        <div
-          className="actions"
-          onClick={[Function]}
-        >
-          <a
-            onClick={[Function]}
-          >
-            <span
-              className="icon-star"
-            />
-          </a>
-        </div>
-      </div>
-      <div
-        className="list-item TASK_INBOX"
-      >
-        <label
-          className="checkbox"
-        >
-          <input
-            checked={false}
-            disabled={false}
-            name="Something again"
-            type="checkbox"
-          />
-          <span
-            className="checkbox-custom"
-            onClick={[Function]}
-          />
-        </label>
-        <div
-          className="title"
-        >
-          <input
-            placeholder="Input title"
-            readOnly={true}
-            type="text"
-            value="Something again"
-          />
-        </div>
-        <div
-          className="actions"
-          onClick={[Function]}
-        >
-          <a
-            onClick={[Function]}
-          >
-            <span
-              className="icon-star"
-            />
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots InboxScreen Error 1`] = `
-<div
-  style={
-    Object {
-      "padding": "3rem",
+    style={
+      Object {
+        "color": "#863A4D",
+        "textAlign": "center",
+      }
     }
-  }
->
-  <div
-    className="page lists-show"
   >
-    <nav>
-      <h1
-        className="title-page"
-      >
-        <span
-          className="title-wrapper"
-        >
-          Taskbox
-        </span>
-      </h1>
-    </nav>
-    <div
-      className="list-items"
-    >
-      <div
-        className="list-item TASK_INBOX"
-      >
-        <label
-          className="checkbox"
-        >
-          <input
-            checked={false}
-            disabled={false}
-            name="Something"
-            type="checkbox"
-          />
-          <span
-            className="checkbox-custom"
-            onClick={[Function]}
-          />
-        </label>
-        <div
-          className="title"
-        >
-          <input
-            placeholder="Input title"
-            readOnly={true}
-            type="text"
-            value="Something"
-          />
-        </div>
-        <div
-          className="actions"
-          onClick={[Function]}
-        >
-          <a
-            onClick={[Function]}
-          >
-            <span
-              className="icon-star"
-            />
-          </a>
-        </div>
-      </div>
-      <div
-        className="list-item TASK_INBOX"
-      >
-        <label
-          className="checkbox"
-        >
-          <input
-            checked={false}
-            disabled={false}
-            name="Something more"
-            type="checkbox"
-          />
-          <span
-            className="checkbox-custom"
-            onClick={[Function]}
-          />
-        </label>
-        <div
-          className="title"
-        >
-          <input
-            placeholder="Input title"
-            readOnly={true}
-            type="text"
-            value="Something more"
-          />
-        </div>
-        <div
-          className="actions"
-          onClick={[Function]}
-        >
-          <a
-            onClick={[Function]}
-          >
-            <span
-              className="icon-star"
-            />
-          </a>
-        </div>
-      </div>
-      <div
-        className="list-item TASK_INBOX"
-      >
-        <label
-          className="checkbox"
-        >
-          <input
-            checked={false}
-            disabled={false}
-            name="Something else"
-            type="checkbox"
-          />
-          <span
-            className="checkbox-custom"
-            onClick={[Function]}
-          />
-        </label>
-        <div
-          className="title"
-        >
-          <input
-            placeholder="Input title"
-            readOnly={true}
-            type="text"
-            value="Something else"
-          />
-        </div>
-        <div
-          className="actions"
-          onClick={[Function]}
-        >
-          <a
-            onClick={[Function]}
-          >
-            <span
-              className="icon-star"
-            />
-          </a>
-        </div>
-      </div>
-      <div
-        className="list-item TASK_INBOX"
-      >
-        <label
-          className="checkbox"
-        >
-          <input
-            checked={false}
-            disabled={false}
-            name="Something again"
-            type="checkbox"
-          />
-          <span
-            className="checkbox-custom"
-            onClick={[Function]}
-          />
-        </label>
-        <div
-          className="title"
-        >
-          <input
-            placeholder="Input title"
-            readOnly={true}
-            type="text"
-            value="Something again"
-          />
-        </div>
-        <div
-          className="actions"
-          onClick={[Function]}
-        >
-          <a
-            onClick={[Function]}
-          >
-            <span
-              className="icon-star"
-            />
-          </a>
-        </div>
-      </div>
-    </div>
+    <h1>
+      Please click all the tags that describe your document.
+    </h1>
+    <h2>
+      The ones you select will display a blue border.
+    </h2>
   </div>
-</div>
-`;
-
-exports[`Storyshots Task Archived 1`] = `
-<div
-  className="list-item TASK_ARCHIVED"
->
-  <label
-    className="checkbox"
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexWrap": "wrap",
+        "justifyContent": "center",
+      }
+    }
   >
-    <input
-      defaultChecked={true}
-      disabled={true}
-      name="checked"
-      type="checkbox"
-    />
-    <span
-      className="checkbox-custom"
+    <button
       onClick={[Function]}
-    />
-  </label>
-  <div
-    className="title"
-  >
-    <input
-      placeholder="Input title"
-      readOnly={true}
-      type="text"
-      value="Test Task"
-    />
+      style={
+        Object {
+          "backgroundColor": "#D8EAFD",
+          "borderRadius": "0.25rem",
+          "borderStyle": "none",
+          "margin": "0.5rem",
+          "outline": 0,
+          "padding": "0.5rem",
+        }
+      }
+    >
+      Food
+    </button>
+    <button
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#D8EAFD",
+          "borderRadius": "0.25rem",
+          "borderStyle": "none",
+          "margin": "0.5rem",
+          "outline": 0,
+          "padding": "0.5rem",
+        }
+      }
+    >
+      Celebrations
+    </button>
+    <button
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#D8EAFD",
+          "borderRadius": "0.25rem",
+          "borderStyle": "none",
+          "margin": "0.5rem",
+          "outline": 0,
+          "padding": "0.5rem",
+        }
+      }
+    >
+      Music/Art
+    </button>
+    <button
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#D8EAFD",
+          "borderRadius": "0.25rem",
+          "borderStyle": "none",
+          "margin": "0.5rem",
+          "outline": 0,
+          "padding": "0.5rem",
+        }
+      }
+    >
+      Faith/Religion
+    </button>
+    <button
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#D8EAFD",
+          "borderRadius": "0.25rem",
+          "borderStyle": "none",
+          "margin": "0.5rem",
+          "outline": 0,
+          "padding": "0.5rem",
+        }
+      }
+    >
+      Business
+    </button>
+    <button
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#D8EAFD",
+          "borderRadius": "0.25rem",
+          "borderStyle": "none",
+          "margin": "0.5rem",
+          "outline": 0,
+          "padding": "0.5rem",
+        }
+      }
+    >
+      Language
+    </button>
+    <button
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#D8EAFD",
+          "borderRadius": "0.25rem",
+          "borderStyle": "none",
+          "margin": "0.5rem",
+          "outline": 0,
+          "padding": "0.5rem",
+        }
+      }
+    >
+      Fashion
+    </button>
+    <button
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#D8EAFD",
+          "borderRadius": "0.25rem",
+          "borderStyle": "none",
+          "margin": "0.5rem",
+          "outline": 0,
+          "padding": "0.5rem",
+        }
+      }
+    >
+      Biography
+    </button>
+    <button
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#D8EAFD",
+          "borderRadius": "0.25rem",
+          "borderStyle": "none",
+          "margin": "0.5rem",
+          "outline": 0,
+          "padding": "0.5rem",
+        }
+      }
+    >
+      Notable Event
+    </button>
+    <button
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#D8EAFD",
+          "borderRadius": "0.25rem",
+          "borderStyle": "none",
+          "margin": "0.5rem",
+          "outline": 0,
+          "padding": "0.5rem",
+        }
+      }
+    >
+      Notable Time Period
+    </button>
   </div>
   <div
-    className="actions"
-    onClick={[Function]}
+    style={
+      Object {
+        "display": "flex",
+        "justifyContent": "center",
+        "marginTop": "0.5rem",
+      }
+    }
+  >
+    Selected Tags: 
+    <span
+      style={
+        Object {
+          "fontWeight": "700",
+          "marginLeft": "0.25rem",
+        }
+      }
+    >
+       
+      
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots AuthenticationForm Default 1`] = `
+<div
+  style={
+    Object {
+      "borderRadius": "0.25rem",
+      "display": "flex",
+      "flexDirection": "column",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#D0EBE0",
+        "borderRadius": "0.25rem",
+        "padding": "1rem",
+        "textAlign": "center",
+      }
+    }
+  >
+    <h1>
+      Welcome to Project Amber
+    </h1>
+    <div>
+      Let’s upload your local history to the internet and make it easy to learn and explore!
+    </div>
+  </div>
+  <div
+    className="sc-AxhUy jjzzNB"
+  >
+    <form
+      className="sc-AxjAm dymhzL"
+      onSubmit={[Function]}
+    >
+      <label
+        style={
+          Object {
+            "display": "flex",
+            "flexDirection": "column",
+            "fontSize": "1rem",
+            "marginBottom": "0.5rem",
+            "marginTop": "0.5rem",
+            "width": "100%",
+          }
+        }
+      >
+        Email
+        <input
+          onChange={[Function]}
+          placeholder="Type your email..."
+          style={
+            Object {
+              "--border-opacity": "1",
+              "appearance": "none",
+              "borderColor": "rgba(226, 232, 240, var(--border-opacity))",
+              "borderRadius": "0.5rem",
+              "borderStyle": "solid",
+              "borderWidth": "1px",
+              "fontSize": "1rem",
+              "lineHeight": "1.5",
+              "paddingBottom": "0.5rem",
+              "paddingLeft": "1rem",
+              "paddingRight": "1rem",
+              "paddingTop": "0.5rem",
+            }
+          }
+          type="text"
+        />
+      </label>
+      <label
+        style={
+          Object {
+            "display": "flex",
+            "flexDirection": "column",
+            "fontSize": "1rem",
+            "marginBottom": "0.5rem",
+            "marginTop": "0.5rem",
+            "width": "100%",
+          }
+        }
+      >
+        Password
+        <input
+          onChange={[Function]}
+          placeholder="Must be more than 8 characters..."
+          style={
+            Object {
+              "--border-opacity": "1",
+              "appearance": "none",
+              "borderColor": "rgba(226, 232, 240, var(--border-opacity))",
+              "borderRadius": "0.5rem",
+              "borderStyle": "solid",
+              "borderWidth": "1px",
+              "fontSize": "1rem",
+              "lineHeight": "1.5",
+              "paddingBottom": "0.5rem",
+              "paddingLeft": "1rem",
+              "paddingRight": "1rem",
+              "paddingTop": "0.5rem",
+            }
+          }
+          type="password"
+        />
+      </label>
+      <label
+        style={
+          Object {
+            "display": "flex",
+            "flexDirection": "column",
+            "fontSize": "1rem",
+            "marginBottom": "0.5rem",
+            "marginTop": "0.5rem",
+            "width": "100%",
+          }
+        }
+      >
+        Confirm Password
+        <input
+          onChange={[Function]}
+          placeholder="Must match the password above..."
+          style={
+            Object {
+              "--border-opacity": "1",
+              "appearance": "none",
+              "borderColor": "rgba(226, 232, 240, var(--border-opacity))",
+              "borderRadius": "0.5rem",
+              "borderStyle": "solid",
+              "borderWidth": "1px",
+              "fontSize": "1rem",
+              "lineHeight": "1.5",
+              "paddingBottom": "0.5rem",
+              "paddingLeft": "1rem",
+              "paddingRight": "1rem",
+              "paddingTop": "0.5rem",
+            }
+          }
+          type="password"
+        />
+      </label>
+      <button
+        className="sc-AxirZ hoFQmy"
+        type="submit"
+      >
+        Create an Account
+      </button>
+    </form>
+    <form
+      className="sc-AxiKw hSvRNb"
+      onSubmit={[Function]}
+    >
+      <label
+        style={
+          Object {
+            "display": "flex",
+            "flexDirection": "column",
+            "fontSize": "1rem",
+            "marginBottom": "0.5rem",
+            "marginTop": "0.5rem",
+            "width": "100%",
+          }
+        }
+      >
+        Email
+        <input
+          onChange={[Function]}
+          placeholder="Type your email..."
+          style={
+            Object {
+              "--border-opacity": "1",
+              "appearance": "none",
+              "borderColor": "rgba(226, 232, 240, var(--border-opacity))",
+              "borderRadius": "0.5rem",
+              "borderStyle": "solid",
+              "borderWidth": "1px",
+              "fontSize": "1rem",
+              "lineHeight": "1.5",
+              "paddingBottom": "0.5rem",
+              "paddingLeft": "1rem",
+              "paddingRight": "1rem",
+              "paddingTop": "0.5rem",
+            }
+          }
+          type="password"
+        />
+      </label>
+      <label
+        style={
+          Object {
+            "display": "flex",
+            "flexDirection": "column",
+            "fontSize": "1rem",
+            "marginBottom": "0.5rem",
+            "marginTop": "0.5rem",
+            "width": "100%",
+          }
+        }
+      >
+        Password
+        <input
+          onChange={[Function]}
+          placeholder="Type your password..."
+          style={
+            Object {
+              "--border-opacity": "1",
+              "appearance": "none",
+              "borderColor": "rgba(226, 232, 240, var(--border-opacity))",
+              "borderRadius": "0.5rem",
+              "borderStyle": "solid",
+              "borderWidth": "1px",
+              "fontSize": "1rem",
+              "lineHeight": "1.5",
+              "paddingBottom": "0.5rem",
+              "paddingLeft": "1rem",
+              "paddingRight": "1rem",
+              "paddingTop": "0.5rem",
+            }
+          }
+          type="password"
+        />
+      </label>
+      <button
+        className="sc-AxhCb hExNfm"
+        type="submit"
+      >
+        Sign in
+      </button>
+    </form>
+  </div>
+</div>
+`;
+
+exports[`Storyshots DocumentCreationForm Default 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+      "flexDirection": "column",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "color": "#863A4D",
+          "textAlign": "center",
+        }
+      }
+    >
+      <h1>
+        Are you adding a verified document or local lore?
+      </h1>
+      <h2>
+        Select one of the two options below
+      </h2>
+    </div>
+    <div
+      style={
+        Object {
+          "display": "flex",
+          "flexDirection": "row",
+          "marginLeft": "1rem",
+          "marginRight": "1rem",
+          "textAlign": "center",
+        }
+      }
+    >
+      <svg
+        aria-hidden={true}
+        className="MuiSvgIcon-root"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
+        />
+      </svg>
+      <div>
+        Verified documents must include at least one citation from a credible source. You may cite a primary source or historian in a verified document, but we encourage you to add local lore if you have an interesting story that includes uncertain details or unverifiable facts.
+      </div>
+    </div>
+    <div
+      style={
+        Object {
+          "display": "flex",
+          "flexDirection": "column",
+          "justifyContent": "center",
+          "textAlign": "center",
+        }
+      }
+    >
+      <button
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#D8EAFD",
+            "borderRadius": "0.25rem",
+            "borderStyle": "none",
+            "margin": "0.5rem",
+            "outline": 0,
+            "padding": "0.5rem",
+          }
+        }
+      >
+        Verified Document
+      </button>
+      <button
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#D8EAFD",
+            "borderRadius": "0.25rem",
+            "borderStyle": "none",
+            "margin": "0.5rem",
+            "outline": 0,
+            "padding": "0.5rem",
+          }
+        }
+      >
+        Local Lore
+      </button>
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "marginTop": "1rem",
+      }
+    }
+  >
+    <button
+      disabled={true}
+      onClick={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "flexDirection": "row",
+          "marginRight": "0.5rem",
+          "padding": "0.5rem",
+        }
+      }
+    >
+      Back
+    </button>
+    <button
+      disabled={true}
+      onClick={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "flexDirection": "row",
+          "marginLeft": "0.5rem",
+          "padding": "0.5rem",
+        }
+      }
+    >
+      Next
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots FormInput Default 1`] = `
+<label
+  style={
+    Object {
+      "display": "flex",
+      "flexDirection": "column",
+      "fontSize": "1rem",
+      "marginBottom": "0.5rem",
+      "marginTop": "0.5rem",
+      "width": "100%",
+    }
+  }
+>
+  Example label
+  <input
+    placeholder="Example placeholder"
+    style={
+      Object {
+        "--border-opacity": "1",
+        "appearance": "none",
+        "borderColor": "rgba(226, 232, 240, var(--border-opacity))",
+        "borderRadius": "0.5rem",
+        "borderStyle": "solid",
+        "borderWidth": "1px",
+        "fontSize": "1rem",
+        "lineHeight": "1.5",
+        "paddingBottom": "0.5rem",
+        "paddingLeft": "1rem",
+        "paddingRight": "1rem",
+        "paddingTop": "0.5rem",
+      }
+    }
+    type="text"
+  />
+</label>
+`;
+
+exports[`Storyshots FormInput Password Input 1`] = `
+<label
+  style={
+    Object {
+      "display": "flex",
+      "flexDirection": "column",
+      "fontSize": "1rem",
+      "marginBottom": "0.5rem",
+      "marginTop": "0.5rem",
+      "width": "100%",
+    }
+  }
+>
+  Example label
+  <input
+    placeholder="Example placeholder"
+    style={
+      Object {
+        "--border-opacity": "1",
+        "appearance": "none",
+        "borderColor": "rgba(226, 232, 240, var(--border-opacity))",
+        "borderRadius": "0.5rem",
+        "borderStyle": "solid",
+        "borderWidth": "1px",
+        "fontSize": "1rem",
+        "lineHeight": "1.5",
+        "paddingBottom": "0.5rem",
+        "paddingLeft": "1rem",
+        "paddingRight": "1rem",
+        "paddingTop": "0.5rem",
+      }
+    }
+    type="password"
+  />
+</label>
+`;
+
+exports[`Storyshots FormTextArea Default 1`] = `
+<label
+  style={
+    Object {
+      "display": "flex",
+      "flexDirection": "column",
+      "fontSize": "1rem",
+      "height": "100%",
+      "marginBottom": "0.5rem",
+      "marginTop": "0.5rem",
+      "width": "100%",
+    }
+  }
+>
+  Example Label
+  <textarea
+    onChange={[Function]}
+    placeholder="Example placeholder"
+    style={
+      Object {
+        "--border-opacity": "1",
+        "appearance": "none",
+        "borderColor": "rgba(226, 232, 240, var(--border-opacity))",
+        "borderRadius": "0.5rem",
+        "borderStyle": "solid",
+        "borderWidth": "1px",
+        "fontFamily": "Arial",
+        "fontSize": "1rem",
+        "lineHeight": "1.5",
+        "paddingBottom": "0.5rem",
+        "paddingLeft": "1rem",
+        "paddingRight": "1rem",
+        "paddingTop": "0.5rem",
+      }
+    }
+  />
+</label>
+`;
+
+exports[`Storyshots Head Not Sticky 1`] = `
+<div>
+  <h1>
+    I'm a title!
+  </h1>
+</div>
+`;
+
+exports[`Storyshots Head Sticky 1`] = `
+<div>
+  <h1>
+    I'm a title!
+  </h1>
+  <h3>
+    is stucked
+  </h3>
+</div>
+`;
+
+exports[`Storyshots HomeScreen Default 1`] = `
+<div
+  className="searchContainer"
+>
+  <svg
+    className="searchIcon"
+    fill="none"
+    height="1em"
+    stroke="currentColor"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    strokeWidth="2"
+    style={
+      Object {
+        "color": undefined,
+      }
+    }
+    viewBox="0 0 24 24"
+    width="1em"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <circle
+      cx="11"
+      cy="11"
+      r="8"
+    />
+    <line
+      x1="21"
+      x2="16.65"
+      y1="21"
+      y2="16.65"
+    />
+  </svg>
+  <input
+    className="primarySearch"
+    id="primarySearch"
+    name="primarySearch"
+    onChange={[Function]}
+    type="text"
+    value=""
   />
 </div>
 `;
 
-exports[`Storyshots Task Default 1`] = `
+exports[`Storyshots LoreOrCredible Default 1`] = `
 <div
-  className="list-item TASK_INBOX"
+  style={
+    Object {
+      "display": "flex",
+      "flexDirection": "column",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "color": "#863A4D",
+        "textAlign": "center",
+      }
+    }
+  >
+    <h1>
+      Are you adding a verified document or local lore?
+    </h1>
+    <h2>
+      Select one of the two options below
+    </h2>
+  </div>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "row",
+        "marginLeft": "1rem",
+        "marginRight": "1rem",
+        "textAlign": "center",
+      }
+    }
+  >
+    <svg
+      aria-hidden={true}
+      className="MuiSvgIcon-root"
+      focusable="false"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
+      />
+    </svg>
+    <div>
+      Verified documents must include at least one citation from a credible source. You may cite a primary source or historian in a verified document, but we encourage you to add local lore if you have an interesting story that includes uncertain details or unverifiable facts.
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "justifyContent": "center",
+        "textAlign": "center",
+      }
+    }
+  >
+    <button
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#D8EAFD",
+          "borderRadius": "0.25rem",
+          "borderStyle": "none",
+          "margin": "0.5rem",
+          "outline": 0,
+          "padding": "0.5rem",
+        }
+      }
+    >
+      Verified Document
+    </button>
+    <button
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#D8EAFD",
+          "borderRadius": "0.25rem",
+          "borderStyle": "none",
+          "margin": "0.5rem",
+          "outline": 0,
+          "padding": "0.5rem",
+        }
+      }
+    >
+      Local Lore
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots NewHistory Default 1`] = `<button />`;
+
+exports[`Storyshots PlaceMarker Default 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexDirection": "column",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "textAlign": "center",
+      }
+    }
+  >
+    <h1>
+      Choose a location for your article
+    </h1>
+    <h2>
+      Click anywhere on the map to place a marker. Click again to re-place your marker.
+    </h2>
+  </div>
+  <div
+    style={
+      Object {
+        "height": "80vh",
+        "width": "80vw",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots PrimarySearch Default 1`] = `
+<div
+  className="searchContainer"
+>
+  <svg
+    className="searchIcon"
+    fill="none"
+    height="1em"
+    stroke="currentColor"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    strokeWidth="2"
+    style={
+      Object {
+        "color": undefined,
+      }
+    }
+    viewBox="0 0 24 24"
+    width="1em"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <circle
+      cx="11"
+      cy="11"
+      r="8"
+    />
+    <line
+      x1="21"
+      x2="16.65"
+      y1="21"
+      y2="16.65"
+    />
+  </svg>
+  <input
+    className="primarySearch"
+    id="primarySearch"
+    name="primarySearch"
+    onChange={[Function]}
+    type="text"
+    value=""
+  />
+</div>
+`;
+
+exports[`Storyshots SelectArticleType Default 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+      "flexDirection": "column",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "color": "#863A4D",
+        "textAlign": "center",
+      }
+    }
+  >
+    <h1>
+      Are you adding a verified document or local lore?
+    </h1>
+    <h2>
+      Select one of the three options below
+    </h2>
+  </div>
+  <div
+    onClick={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#D0EBE0",
+        "borderRadius": "0.25rem",
+        "display": "flex",
+        "flexDirection": "column",
+        "margin": "0.5rem",
+        "outline": 0,
+        "padding": "1rem",
+        "textAlign": "center",
+      }
+    }
+  >
+    <h3>
+      Walking Tour Article 
+      <span
+        style={
+          Object {
+            "--text-opacity": "1",
+            "color": "rgba(229, 62, 62, var(--text-opacity))",
+          }
+        }
+      >
+        (Preferred)
+      </span>
+    </h3>
+    <div>
+      Create an article with a location and a single paragraph description. Also record a 30 second story or upload a short audio clip. We love it when you create walking tour articles so users can easily discover your stories.
+    </div>
+  </div>
+  <div
+    onClick={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#FFF1EB",
+        "borderRadius": "0.25rem",
+        "display": "flex",
+        "flexDirection": "column",
+        "margin": "0.5rem",
+        "outline": 0,
+        "padding": "1rem",
+        "textAlign": "center",
+      }
+    }
+  >
+    <h3>
+      Archive With Location
+    </h3>
+    <div>
+      Create an article with an address, up to 2000 words, and attach pictures or audio or links to videos.
+    </div>
+  </div>
+  <div
+    onClick={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#D8EAFD",
+        "borderRadius": "0.25rem",
+        "display": "flex",
+        "flexDirection": "column",
+        "margin": "0.5rem",
+        "outline": 0,
+        "padding": "1rem",
+        "textAlign": "center",
+      }
+    }
+  >
+    <h3>
+      Archive Without Location
+    </h3>
+    <div>
+      Create an article connected to a region such as the Smoky Mountains limited to 2000 words.
+    </div>
+    <div
+      style={
+        Object {
+          "fontWeight": "700",
+        }
+      }
+    >
+      * Note that regions will be specified through a textual description, so if possible, we recommend using the Archive with Location above so users can discover your content from the virtual map.
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots SignIn Default 1`] = `
+<form
+  className="sc-AxiKw hSvRNb"
+  onSubmit={[Function]}
 >
   <label
-    className="checkbox"
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "fontSize": "1rem",
+        "marginBottom": "0.5rem",
+        "marginTop": "0.5rem",
+        "width": "100%",
+      }
+    }
   >
+    Email
     <input
-      defaultChecked={false}
-      disabled={true}
-      name="checked"
-      type="checkbox"
-    />
-    <span
-      className="checkbox-custom"
-      onClick={[Function]}
+      onChange={[Function]}
+      placeholder="Type your email..."
+      style={
+        Object {
+          "--border-opacity": "1",
+          "appearance": "none",
+          "borderColor": "rgba(226, 232, 240, var(--border-opacity))",
+          "borderRadius": "0.5rem",
+          "borderStyle": "solid",
+          "borderWidth": "1px",
+          "fontSize": "1rem",
+          "lineHeight": "1.5",
+          "paddingBottom": "0.5rem",
+          "paddingLeft": "1rem",
+          "paddingRight": "1rem",
+          "paddingTop": "0.5rem",
+        }
+      }
+      type="password"
     />
   </label>
-  <div
-    className="title"
+  <label
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "fontSize": "1rem",
+        "marginBottom": "0.5rem",
+        "marginTop": "0.5rem",
+        "width": "100%",
+      }
+    }
   >
+    Password
     <input
-      placeholder="Input title"
-      readOnly={true}
-      type="text"
-      value="Test Task"
+      onChange={[Function]}
+      placeholder="Type your password..."
+      style={
+        Object {
+          "--border-opacity": "1",
+          "appearance": "none",
+          "borderColor": "rgba(226, 232, 240, var(--border-opacity))",
+          "borderRadius": "0.5rem",
+          "borderStyle": "solid",
+          "borderWidth": "1px",
+          "fontSize": "1rem",
+          "lineHeight": "1.5",
+          "paddingBottom": "0.5rem",
+          "paddingLeft": "1rem",
+          "paddingRight": "1rem",
+          "paddingTop": "0.5rem",
+        }
+      }
+      type="password"
     />
-  </div>
-  <div
-    className="actions"
-    onClick={[Function]}
+  </label>
+  <button
+    className="sc-AxhCb hExNfm"
+    type="submit"
   >
-    <a
-      onClick={[Function]}
-    >
-      <span
-        className="icon-star"
-      />
-    </a>
-  </div>
-</div>
+    Sign in
+  </button>
+</form>
 `;
 
-exports[`Storyshots Task Pinned 1`] = `
-<div
-  className="list-item TASK_PINNED"
+exports[`Storyshots SignUp Default 1`] = `
+<form
+  className="sc-AxjAm dymhzL"
+  onSubmit={[Function]}
 >
   <label
-    className="checkbox"
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "fontSize": "1rem",
+        "marginBottom": "0.5rem",
+        "marginTop": "0.5rem",
+        "width": "100%",
+      }
+    }
   >
+    Email
     <input
-      defaultChecked={false}
-      disabled={true}
-      name="checked"
-      type="checkbox"
-    />
-    <span
-      className="checkbox-custom"
-      onClick={[Function]}
+      onChange={[Function]}
+      placeholder="Type your email..."
+      style={
+        Object {
+          "--border-opacity": "1",
+          "appearance": "none",
+          "borderColor": "rgba(226, 232, 240, var(--border-opacity))",
+          "borderRadius": "0.5rem",
+          "borderStyle": "solid",
+          "borderWidth": "1px",
+          "fontSize": "1rem",
+          "lineHeight": "1.5",
+          "paddingBottom": "0.5rem",
+          "paddingLeft": "1rem",
+          "paddingRight": "1rem",
+          "paddingTop": "0.5rem",
+        }
+      }
+      type="text"
     />
   </label>
-  <div
-    className="title"
+  <label
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "fontSize": "1rem",
+        "marginBottom": "0.5rem",
+        "marginTop": "0.5rem",
+        "width": "100%",
+      }
+    }
   >
+    Password
     <input
-      placeholder="Input title"
-      readOnly={true}
-      type="text"
-      value="Test Task"
+      onChange={[Function]}
+      placeholder="Must be more than 8 characters..."
+      style={
+        Object {
+          "--border-opacity": "1",
+          "appearance": "none",
+          "borderColor": "rgba(226, 232, 240, var(--border-opacity))",
+          "borderRadius": "0.5rem",
+          "borderStyle": "solid",
+          "borderWidth": "1px",
+          "fontSize": "1rem",
+          "lineHeight": "1.5",
+          "paddingBottom": "0.5rem",
+          "paddingLeft": "1rem",
+          "paddingRight": "1rem",
+          "paddingTop": "0.5rem",
+        }
+      }
+      type="password"
     />
-  </div>
-  <div
-    className="actions"
-    onClick={[Function]}
+  </label>
+  <label
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "fontSize": "1rem",
+        "marginBottom": "0.5rem",
+        "marginTop": "0.5rem",
+        "width": "100%",
+      }
+    }
   >
-    <a
-      onClick={[Function]}
-    >
-      <span
-        className="icon-star"
-      />
-    </a>
-  </div>
-</div>
+    Confirm Password
+    <input
+      onChange={[Function]}
+      placeholder="Must match the password above..."
+      style={
+        Object {
+          "--border-opacity": "1",
+          "appearance": "none",
+          "borderColor": "rgba(226, 232, 240, var(--border-opacity))",
+          "borderRadius": "0.5rem",
+          "borderStyle": "solid",
+          "borderWidth": "1px",
+          "fontSize": "1rem",
+          "lineHeight": "1.5",
+          "paddingBottom": "0.5rem",
+          "paddingLeft": "1rem",
+          "paddingRight": "1rem",
+          "paddingTop": "0.5rem",
+        }
+      }
+      type="password"
+    />
+  </label>
+  <button
+    className="sc-AxirZ hoFQmy"
+    type="submit"
+  >
+    Create an Account
+  </button>
+</form>
 `;
 
-exports[`Storyshots TaskList Default 1`] = `
+exports[`Storyshots WriteArticle Default 1`] = `
 <div
   style={
     Object {
-      "padding": "3rem",
+      "alignItems": "center",
+      "display": "flex",
+      "flexDirection": "column",
     }
   }
 >
   <div
-    className="list-items"
-  >
-    <div
-      className="list-item TASK_INBOX"
-    >
-      <label
-        className="checkbox"
-      >
-        <input
-          checked={false}
-          disabled={false}
-          name="Task 1"
-          type="checkbox"
-        />
-        <span
-          className="checkbox-custom"
-          onClick={[Function]}
-        />
-      </label>
-      <div
-        className="title"
-      >
-        <input
-          placeholder="Input title"
-          readOnly={true}
-          type="text"
-          value="Task 1"
-        />
-      </div>
-      <div
-        className="actions"
-        onClick={[Function]}
-      >
-        <a
-          onClick={[Function]}
-        >
-          <span
-            className="icon-star"
-          />
-        </a>
-      </div>
-    </div>
-    <div
-      className="list-item TASK_INBOX"
-    >
-      <label
-        className="checkbox"
-      >
-        <input
-          checked={false}
-          disabled={false}
-          name="Task 2"
-          type="checkbox"
-        />
-        <span
-          className="checkbox-custom"
-          onClick={[Function]}
-        />
-      </label>
-      <div
-        className="title"
-      >
-        <input
-          placeholder="Input title"
-          readOnly={true}
-          type="text"
-          value="Task 2"
-        />
-      </div>
-      <div
-        className="actions"
-        onClick={[Function]}
-      >
-        <a
-          onClick={[Function]}
-        >
-          <span
-            className="icon-star"
-          />
-        </a>
-      </div>
-    </div>
-    <div
-      className="list-item TASK_INBOX"
-    >
-      <label
-        className="checkbox"
-      >
-        <input
-          checked={false}
-          disabled={false}
-          name="Task 3"
-          type="checkbox"
-        />
-        <span
-          className="checkbox-custom"
-          onClick={[Function]}
-        />
-      </label>
-      <div
-        className="title"
-      >
-        <input
-          placeholder="Input title"
-          readOnly={true}
-          type="text"
-          value="Task 3"
-        />
-      </div>
-      <div
-        className="actions"
-        onClick={[Function]}
-      >
-        <a
-          onClick={[Function]}
-        >
-          <span
-            className="icon-star"
-          />
-        </a>
-      </div>
-    </div>
-    <div
-      className="list-item TASK_INBOX"
-    >
-      <label
-        className="checkbox"
-      >
-        <input
-          checked={false}
-          disabled={false}
-          name="Task 4"
-          type="checkbox"
-        />
-        <span
-          className="checkbox-custom"
-          onClick={[Function]}
-        />
-      </label>
-      <div
-        className="title"
-      >
-        <input
-          placeholder="Input title"
-          readOnly={true}
-          type="text"
-          value="Task 4"
-        />
-      </div>
-      <div
-        className="actions"
-        onClick={[Function]}
-      >
-        <a
-          onClick={[Function]}
-        >
-          <span
-            className="icon-star"
-          />
-        </a>
-      </div>
-    </div>
-    <div
-      className="list-item TASK_INBOX"
-    >
-      <label
-        className="checkbox"
-      >
-        <input
-          checked={false}
-          disabled={false}
-          name="Task 5"
-          type="checkbox"
-        />
-        <span
-          className="checkbox-custom"
-          onClick={[Function]}
-        />
-      </label>
-      <div
-        className="title"
-      >
-        <input
-          placeholder="Input title"
-          readOnly={true}
-          type="text"
-          value="Task 5"
-        />
-      </div>
-      <div
-        className="actions"
-        onClick={[Function]}
-      >
-        <a
-          onClick={[Function]}
-        >
-          <span
-            className="icon-star"
-          />
-        </a>
-      </div>
-    </div>
-    <div
-      className="list-item TASK_INBOX"
-    >
-      <label
-        className="checkbox"
-      >
-        <input
-          checked={false}
-          disabled={false}
-          name="Task 6"
-          type="checkbox"
-        />
-        <span
-          className="checkbox-custom"
-          onClick={[Function]}
-        />
-      </label>
-      <div
-        className="title"
-      >
-        <input
-          placeholder="Input title"
-          readOnly={true}
-          type="text"
-          value="Task 6"
-        />
-      </div>
-      <div
-        className="actions"
-        onClick={[Function]}
-      >
-        <a
-          onClick={[Function]}
-        >
-          <span
-            className="icon-star"
-          />
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots TaskList Empty 1`] = `
-<div
-  style={
-    Object {
-      "padding": "3rem",
+    style={
+      Object {
+        "color": "#863A4D",
+      }
     }
-  }
->
-  <div
-    className="list-items"
   >
-    <div
-      className="wrapper-message"
-    >
-      <span
-        className="icon-check"
-      />
-      <div
-        className="title-message"
-      >
-        You have no tasks
-      </div>
-      <div
-        className="subtitle-message"
-      >
-        Take it easy for the rest of the evening.
-      </div>
-    </div>
+    <h1>
+      Write Your Article Below
+    </h1>
+    <h3>
+      Provided below is a space for a title and a space for the article body.
+    </h3>
   </div>
-</div>
-`;
-
-exports[`Storyshots TaskList Loading 1`] = `
-<div
-  style={
-    Object {
-      "padding": "3rem",
+  <label
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "fontSize": "1rem",
+        "marginBottom": "0.5rem",
+        "marginTop": "0.5rem",
+        "width": "100%",
+      }
     }
-  }
->
-  <div
-    className="list-items"
   >
-    <div
-      className="loading-item"
-    >
-      <span
-        className="glow-checkbox"
-      />
-      <span
-        className="glow-text"
-      >
-        <span>
-          Loading
-        </span>
-         
-        <span>
-          cool
-        </span>
-         
-        <span>
-          state
-        </span>
-      </span>
-    </div>
-    <div
-      className="loading-item"
-    >
-      <span
-        className="glow-checkbox"
-      />
-      <span
-        className="glow-text"
-      >
-        <span>
-          Loading
-        </span>
-         
-        <span>
-          cool
-        </span>
-         
-        <span>
-          state
-        </span>
-      </span>
-    </div>
-    <div
-      className="loading-item"
-    >
-      <span
-        className="glow-checkbox"
-      />
-      <span
-        className="glow-text"
-      >
-        <span>
-          Loading
-        </span>
-         
-        <span>
-          cool
-        </span>
-         
-        <span>
-          state
-        </span>
-      </span>
-    </div>
-    <div
-      className="loading-item"
-    >
-      <span
-        className="glow-checkbox"
-      />
-      <span
-        className="glow-text"
-      >
-        <span>
-          Loading
-        </span>
-         
-        <span>
-          cool
-        </span>
-         
-        <span>
-          state
-        </span>
-      </span>
-    </div>
-    <div
-      className="loading-item"
-    >
-      <span
-        className="glow-checkbox"
-      />
-      <span
-        className="glow-text"
-      >
-        <span>
-          Loading
-        </span>
-         
-        <span>
-          cool
-        </span>
-         
-        <span>
-          state
-        </span>
-      </span>
-    </div>
-    <div
-      className="loading-item"
-    >
-      <span
-        className="glow-checkbox"
-      />
-      <span
-        className="glow-text"
-      >
-        <span>
-          Loading
-        </span>
-         
-        <span>
-          cool
-        </span>
-         
-        <span>
-          state
-        </span>
-      </span>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots TaskList With Pinned Tasks 1`] = `
-<div
-  style={
-    Object {
-      "padding": "3rem",
+    Title
+    <input
+      onChange={[Function]}
+      placeholder="Type your title here..."
+      style={
+        Object {
+          "--border-opacity": "1",
+          "appearance": "none",
+          "borderColor": "rgba(226, 232, 240, var(--border-opacity))",
+          "borderRadius": "0.5rem",
+          "borderStyle": "solid",
+          "borderWidth": "1px",
+          "fontSize": "1rem",
+          "lineHeight": "1.5",
+          "paddingBottom": "0.5rem",
+          "paddingLeft": "1rem",
+          "paddingRight": "1rem",
+          "paddingTop": "0.5rem",
+        }
+      }
+      type="text"
+    />
+  </label>
+  <label
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "fontSize": "1rem",
+        "height": "100%",
+        "marginBottom": "0.5rem",
+        "marginTop": "0.5rem",
+        "width": "100%",
+      }
     }
-  }
->
-  <div
-    className="list-items"
   >
-    <div
-      className="list-item TASK_PINNED"
-    >
-      <label
-        className="checkbox"
-      >
-        <input
-          checked={false}
-          disabled={false}
-          name="Task 6 (pinned)"
-          type="checkbox"
-        />
-        <span
-          className="checkbox-custom"
-          onClick={[Function]}
-        />
-      </label>
-      <div
-        className="title"
-      >
-        <input
-          placeholder="Input title"
-          readOnly={true}
-          type="text"
-          value="Task 6 (pinned)"
-        />
-      </div>
-      <div
-        className="actions"
-        onClick={[Function]}
-      >
-        <a
-          onClick={[Function]}
-        >
-          <span
-            className="icon-star"
-          />
-        </a>
-      </div>
-    </div>
-    <div
-      className="list-item TASK_INBOX"
-    >
-      <label
-        className="checkbox"
-      >
-        <input
-          checked={false}
-          disabled={false}
-          name="Task 1"
-          type="checkbox"
-        />
-        <span
-          className="checkbox-custom"
-          onClick={[Function]}
-        />
-      </label>
-      <div
-        className="title"
-      >
-        <input
-          placeholder="Input title"
-          readOnly={true}
-          type="text"
-          value="Task 1"
-        />
-      </div>
-      <div
-        className="actions"
-        onClick={[Function]}
-      >
-        <a
-          onClick={[Function]}
-        >
-          <span
-            className="icon-star"
-          />
-        </a>
-      </div>
-    </div>
-    <div
-      className="list-item TASK_INBOX"
-    >
-      <label
-        className="checkbox"
-      >
-        <input
-          checked={false}
-          disabled={false}
-          name="Task 2"
-          type="checkbox"
-        />
-        <span
-          className="checkbox-custom"
-          onClick={[Function]}
-        />
-      </label>
-      <div
-        className="title"
-      >
-        <input
-          placeholder="Input title"
-          readOnly={true}
-          type="text"
-          value="Task 2"
-        />
-      </div>
-      <div
-        className="actions"
-        onClick={[Function]}
-      >
-        <a
-          onClick={[Function]}
-        >
-          <span
-            className="icon-star"
-          />
-        </a>
-      </div>
-    </div>
-    <div
-      className="list-item TASK_INBOX"
-    >
-      <label
-        className="checkbox"
-      >
-        <input
-          checked={false}
-          disabled={false}
-          name="Task 3"
-          type="checkbox"
-        />
-        <span
-          className="checkbox-custom"
-          onClick={[Function]}
-        />
-      </label>
-      <div
-        className="title"
-      >
-        <input
-          placeholder="Input title"
-          readOnly={true}
-          type="text"
-          value="Task 3"
-        />
-      </div>
-      <div
-        className="actions"
-        onClick={[Function]}
-      >
-        <a
-          onClick={[Function]}
-        >
-          <span
-            className="icon-star"
-          />
-        </a>
-      </div>
-    </div>
-    <div
-      className="list-item TASK_INBOX"
-    >
-      <label
-        className="checkbox"
-      >
-        <input
-          checked={false}
-          disabled={false}
-          name="Task 4"
-          type="checkbox"
-        />
-        <span
-          className="checkbox-custom"
-          onClick={[Function]}
-        />
-      </label>
-      <div
-        className="title"
-      >
-        <input
-          placeholder="Input title"
-          readOnly={true}
-          type="text"
-          value="Task 4"
-        />
-      </div>
-      <div
-        className="actions"
-        onClick={[Function]}
-      >
-        <a
-          onClick={[Function]}
-        >
-          <span
-            className="icon-star"
-          />
-        </a>
-      </div>
-    </div>
-    <div
-      className="list-item TASK_INBOX"
-    >
-      <label
-        className="checkbox"
-      >
-        <input
-          checked={false}
-          disabled={false}
-          name="Task 5"
-          type="checkbox"
-        />
-        <span
-          className="checkbox-custom"
-          onClick={[Function]}
-        />
-      </label>
-      <div
-        className="title"
-      >
-        <input
-          placeholder="Input title"
-          readOnly={true}
-          type="text"
-          value="Task 5"
-        />
-      </div>
-      <div
-        className="actions"
-        onClick={[Function]}
-      >
-        <a
-          onClick={[Function]}
-        >
-          <span
-            className="icon-star"
-          />
-        </a>
-      </div>
-    </div>
-  </div>
+    Body
+    <textarea
+      onChange={[Function]}
+      placeholder="Type your article here..."
+      style={
+        Object {
+          "--border-opacity": "1",
+          "appearance": "none",
+          "borderColor": "rgba(226, 232, 240, var(--border-opacity))",
+          "borderRadius": "0.5rem",
+          "borderStyle": "solid",
+          "borderWidth": "1px",
+          "fontFamily": "Arial",
+          "fontSize": "1rem",
+          "lineHeight": "1.5",
+          "paddingBottom": "0.5rem",
+          "paddingLeft": "1rem",
+          "paddingRight": "1rem",
+          "paddingTop": "0.5rem",
+        }
+      }
+    />
+  </label>
 </div>
 `;

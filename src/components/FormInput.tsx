@@ -5,7 +5,8 @@ const labelStyles = tw`
   text-base
   flex 
   flex-col 
-  m-2
+  my-2
+  w-full
 `;
 
 const inputStyles = tw`
