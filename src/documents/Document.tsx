@@ -1,4 +1,6 @@
 import mapboxgl from "mapbox-gl";
+import React from 'react';
+import DocumentCard from "../components/DocumentCard";
 
 export enum DocumentType {
   WALKING_TOUR, 
@@ -51,7 +53,7 @@ class Document {
    * Adds this Document visually to a Mapbox map by adding a visual marker and popup to the map.
    * @param map the map to add this document to
    */
-  addToMap(map: mapboxgl.Map) {
+  addToMap(map: mapboxgl.Map): void {
     const popup = new mapboxgl.Popup({ closeButton: true })
       .setHTML(`
         <div style="display:flex; flex-direction:column">
@@ -77,6 +79,30 @@ class Document {
         marker.addTo(map);
       }
     })
+  }
+  
+  /**
+   * Truncates the given string with ellipsis if too long
+   * @param input the string to truncate
+   * @param maxLen the maximum length of the desired string, in characters
+   */
+  private truncate(input: string, maxLen: number): string {
+    return input.length > maxLen ? `${input.substring(0, maxLen)}...` : input;
+  }
+
+  /**
+   * Gets the JSX card that describes this document.
+   */
+  getGraphicalCard(): JSX.Element {
+    return (
+      <DocumentCard>
+        <div tw="flex flex-col">
+          <h3>{this.title}</h3>
+          <p>{this.truncate(this.body, 120)}</p>
+          <a href="#">See Full Article</a>
+        </div>
+      </DocumentCard>
+    );
   }
 }
 
