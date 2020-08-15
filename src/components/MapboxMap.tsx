@@ -6,8 +6,10 @@ import "mapbox-gl/dist/mapbox-gl.css";
  * A component that sets up the MapboxMap and provides a callback to act on the map during the
  * initial rendering of the map. Map renders to 100% width and height of parent container.
  */
-const MapboxMap = ({handleInitialRender}: {
-  handleInitialRender: (map: mapboxgl.Map) => void
+const MapboxMap = ({handleInitialRender, center = [0, 0], zoom = 5}: {
+  handleInitialRender: (map: mapboxgl.Map) => void,
+  center?: [number, number], 
+  zoom?: number
 }) => {
   const [map, setMap] = useState<mapboxgl.Map | null>(null);
   const mapContainer = useRef<HTMLElement | null>(null);
@@ -29,8 +31,8 @@ const MapboxMap = ({handleInitialRender}: {
         // quotes.
         container: mapContainer.current || "", 
         style: 'mapbox://styles/mapbox/streets-v11',
-        center: [0, 0],
-        zoom: 5
+        center: center,
+        zoom: zoom
       });
 
       map.on("load", () => {
@@ -53,7 +55,7 @@ const MapboxMap = ({handleInitialRender}: {
         style={{
           width: "100%",
           height: "100%",
-          overflow: "visible!",
+          overflow: "visible",
         }} 
       />
   );

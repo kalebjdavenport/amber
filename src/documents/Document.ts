@@ -1,3 +1,5 @@
+import mapboxgl from "mapbox-gl";
+
 export enum DocumentType {
   WALKING_TOUR, 
   ARCHIVE_WITH_LOCATION, 
@@ -43,6 +45,38 @@ class Document {
     this.coords = coords;
     this.title = title;
     this.body = body;
+  }
+
+  /**
+   * Adds this Document visually to a Mapbox map by adding a visual marker and popup to the map.
+   * @param map the map to add this document to
+   */
+  addToMap(map: mapboxgl.Map) {
+    const popup = new mapboxgl.Popup({ closeButton: true })
+      .setHTML(`
+        <div style="display:flex; flex-direction:column">
+          <h4>${this.body}</h4>
+          <div><a href="#">See Full Article</a></div>
+        </div>
+      `);
+
+    const marker = new mapboxgl.Marker()
+      .setLngLat([this.coords.lng, this.coords.lat])
+      .setPopup(popup)
+      .addTo(map);
+
+    map.setCenter([this.coords.lng, this.coords.lat]);
+
+    // By default, markers are drawn even outside canvas, so we need to erase them when they are
+    // outside the bounds of the canvas.
+    map.on('move', () => {
+      const markerInsideMap = map.getBounds().contains([this.coords.lng, this.coords.lat]);
+      if (!markerInsideMap) {
+        marker.remove();
+      } else {
+        marker.addTo(map);
+      }
+    })
   }
 }
 
