@@ -1,6 +1,7 @@
 import mapboxgl from "mapbox-gl";
 import React from 'react';
 import DocumentCard from "../components/DocumentCard";
+import MapboxMap from "../components/MapboxMap";
 
 export enum DocumentType {
   WALKING_TOUR, 
@@ -14,9 +15,10 @@ export interface Coords {
 }
 
 /**
- * Although this class does nothing of interest currently, it serves the purpose of encapsulating
- * all data and behavior that should be associated with a Document. Currently, Documents are created
- * with a DocumentBuilder via a DocumentCreationForm.
+ * Encapsulates all data and behavior that should be associated with a Document. Currently, 
+ * Documents are created with a DocumentBuilder via a DocumentCreationForm. They can be directly
+ * instantiated here, but it is more difficult because the fields are not directly mutable. This is
+ * on purpose since Documents should not expose their implementation for the sake of encapsulation.
  */
 class Document {
   private readonly verified: boolean;
@@ -102,6 +104,42 @@ class Document {
           <a href="#">See Full Article</a>
         </div>
       </DocumentCard>
+    );
+  }
+
+  /**
+   * Returns the type as a string
+   * @param type the given `DocumentType`
+   */
+  private typeAsString(type: DocumentType): string {
+    switch (type) {
+      case DocumentType.ARCHIVE_WITH_LOCATION:
+        return "Archive with Location";
+      case DocumentType.ARCHIVE_WITH_REGION:
+        return "Archive with Region";
+      case DocumentType.WALKING_TOUR:
+        return "Walking Tour";
+    }
+  }
+
+  /**
+   * Returns the JSX component that shows this document as a full article (as opposed to a preview).
+   */
+  getGraphicalArticle(): JSX.Element {
+    return (
+      <div tw="flex flex-col">
+        <h1>{this.title}</h1>
+        <div><strong>Type:</strong> {this.typeAsString(this.type)}</div>
+        <p>{this.body}</p>
+        <div>Tags: {this.tags.join(", ")}</div>
+        <div>Location:</div>
+        <MapboxMap handleInitialRender={(map) => {
+          new mapboxgl.Marker()
+            .setLngLat([this.coords.lng, this.coords.lat])
+            .addTo(map);
+          map.setCenter([this.coords.lng, this.coords.lat]);
+        }} />
+      </div>
     );
   }
 }
