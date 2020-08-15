@@ -1,5 +1,6 @@
 import React from 'react';
 import Document from '../documents/Document';
+import 'twin.macro';
 
 /**
  * The graphical representation of a `Document`. In other words, the component where a user would
