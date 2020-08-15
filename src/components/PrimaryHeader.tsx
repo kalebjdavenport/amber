@@ -7,7 +7,7 @@ const headerStyles =
   Object.assign(
     {}, 
     { fontFamily: 'Cinzel, serif', }, 
-    tw`mr-2 my-0 ml-0 self-center bg-gray-100`
+    tw`mr-2 my-0 ml-0 self-center`
   );
 
 const standardBtnStyles = tw`
