@@ -1,6 +1,7 @@
 import React from 'react';
 import Document from '../documents/Document';
 import MapboxMap from './MapboxMap';
+import tw from 'twin.macro';
 
 /**
  * The map component to display documents with popups describing the contents of these documents.
@@ -15,7 +16,14 @@ const DocumentsMap = ({documents}: {
     });
   }
 
-  return <MapboxMap handleInitialRender={addMarkersAndPopupsToMap} />;
+  return (
+    <div tw="relative flex flex-col items-center">
+      <div style={Object.assign({}, tw`absolute rounded-full px-6 z-50 bg-white p-2 shadow`, {top: '15px'})}>
+      Click on a marker to bring up information!
+      </div>
+      <MapboxMap handleInitialRender={addMarkersAndPopupsToMap} />
+    </div>
+  );
 }
 
 export default DocumentsMap;
