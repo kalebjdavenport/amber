@@ -52,11 +52,7 @@ const SampleDiv = styled.div`
   ${tw`w-full shadow bg-black`} // This line applies 3 Tailwind CSS classes to our SampleDiv
 `;
 
-const MyDiv = () => {
-  return <SampleDiv />;
-}
-
-export default MyDiv;
+const MyDiv = () => <SampleDiv />;
 ```
 
 Alternatively, you can add your Tailwind classes inline shown below. Note that you should *not* use
@@ -64,30 +60,14 @@ the style prop with twin.macro as it limits the functionality of twin.macro incl
 to use CSS selectors such as focus or hover.
 
 ```javascript
-import React from 'react';
-
-const MyDiv = () => {
-  return (
-    <input tw="w-full shadow bg-black" />
-  );
-}
-
-export default MyDiv;
+const MyDiv = () => <input tw="w-full shadow bg-black" />;
 ```
 
 Lastly, if you want to use both normal styles and Tailwind classes inline in the same prop, you can
 do it using the `css` prop as shown below. 
 
 ```javascript
-import React from 'react';
-
-const MyDiv = () => {
-  return (
-    <input css={[tw`w-full shadow bg-black`, {background-color: "blue"}]} />
-  );
-}
-
-export default MyDiv;
+const MyDiv = () => <input css={[tw`w-full shadow bg-black`, {background-color: "blue"}]} />;
 ```
 
 See more about twin.macro here:
