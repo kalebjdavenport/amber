@@ -41,7 +41,7 @@ Specifically, this project makes use of the `twin.macro` library that enables us
 [Styled Components](https://styled-components.com/). The below example illustrates how to style an
 object with Styled Components and how to use Tailwindclasses with your components.
 
-```
+```javascript
 import React from 'react';
 import styled from 'styled-components';
 import tw from 'twin.macro';
@@ -53,9 +53,7 @@ const SampleDiv = styled.div`
 `;
 
 const MyDiv = () => {
-  return (
-    <SampleDiv />
-  );
+  return <SampleDiv />;
 }
 
 export default MyDiv;
@@ -65,12 +63,27 @@ Alternatively, you can add your Tailwind classes inline shown below. Note that y
 the style prop with twin.macro as it limits the functionality of twin.macro including not being able
 to use CSS selectors such as focus or hover.
 
-```
+```javascript
 import React from 'react';
 
 const MyDiv = () => {
   return (
     <input tw="w-full shadow bg-black" />
+  );
+}
+
+export default MyDiv;
+```
+
+Lastly, if you want to use both normal styles and Tailwind classes inline in the same prop, you can
+do it using the `css` prop as shown below. 
+
+```javascript
+import React from 'react';
+
+const MyDiv = () => {
+  return (
+    <input css={[tw`w-full shadow bg-black`, {background-color: "blue"}]} />
   );
 }
 
