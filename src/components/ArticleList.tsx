@@ -3,6 +3,7 @@ import Document from '../documents/Document';
 
 /**
  * An ArticleList is a graphical list of `Document`s using `DocumentCard`s for each `Document`
+ * @param documents the documents contained in this list of articles
  */
 const ArticleList = ({documents}: {
   documents: Document[]

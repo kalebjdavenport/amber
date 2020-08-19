@@ -2,6 +2,7 @@ import mapboxgl from "mapbox-gl";
 import React from 'react';
 import DocumentCard from "../components/DocumentCard";
 import MapboxMap from "../components/MapboxMap";
+import { useDrag, DragSourceMonitor } from "react-dnd";
 
 export enum DocumentType {
   WALKING_TOUR, 
@@ -12,6 +13,16 @@ export enum DocumentType {
 export interface Coords {
   lat: number;
   lng: number;
+}
+
+/**
+ * A DraggableCardType is one of
+ * - **WALKING_TOUR_ENTRY** an entry used in a walking tour view (i.e. walking tour creator)
+ * - **ARTICLE** a single article card, typically displayed in a list of articles
+ */
+export enum DraggableCardType {
+  WALKING_TOUR_ENTRY = "WALKING_TOUR_ENTRY",
+  ARTICLE = "ARTICLE"
 }
 
 /**
@@ -27,6 +38,7 @@ class Document {
   private readonly coords: Coords;
   private readonly title: string;
   private readonly body: string;
+  readonly id: string;
 
   /**
    * 
@@ -42,6 +54,7 @@ class Document {
     coords: Coords,
     title: string,
     body: string,
+    id: string,
   ) {
     this.verified = verified;
     this.tags = tags;
@@ -49,13 +62,14 @@ class Document {
     this.coords = coords;
     this.title = title;
     this.body = body;
+    this.id = id;
   }
 
   /**
    * Adds this Document visually to a Mapbox map by adding a visual marker and popup to the map.
    * @param map the map to add this document to
    */
-  addToMap(map: mapboxgl.Map): void {
+  addToMap = (map: mapboxgl.Map): void => {
     const popup = new mapboxgl.Popup({ closeButton: true })
       .setHTML(`
         <div style="display:flex; flex-direction:column">
@@ -93,9 +107,10 @@ class Document {
   }
 
   /**
-   * Gets the JSX card that describes this document.
+   * Returns a graphical card holding the title, preview article text, and a link to the full
+   * article. 
    */
-  getGraphicalCard(): JSX.Element {
+  getGraphicalCard = () => {
     return (
       <DocumentCard>
         <div tw="flex flex-col">
@@ -104,7 +119,40 @@ class Document {
           <a href="#">See Full Article</a>
         </div>
       </DocumentCard>
-    );
+    )
+  }
+
+  /**
+   * Returns a preview card describing this article.
+   * @param onDragBegin the callback for when a drag begins on this card
+   * @param onDragEnd the callback for when a drag ends on this card
+   * @param cardType the type of card, used to determine where it can be dragged to (see types in
+   * the react-dnd library) 
+   */
+  getDraggableCard = ({onDragBegin, onDragEnd, cardType}: {
+    onDragBegin?: (monitor: DragSourceMonitor) => void,
+    onDragEnd?: (item: { article: Document, type: string }, monitor: DragSourceMonitor) => void,
+    cardType: DraggableCardType
+  }): JSX.Element => {
+    const [{ isDragging }, drag] = useDrag({
+      item: { article: this, type: cardType },
+      begin: (monitor) => {
+        if (onDragBegin) onDragBegin(monitor);
+      },
+      end: (item, monitor) => {
+        // Make sure both are not undefined
+        if (onDragEnd && item) onDragEnd(item, monitor);
+      },
+      collect: (monitor: any) => ({
+        isDragging: monitor.isDragging()
+      })
+    });
+
+    return (
+      <div ref={drag} style={{opacity: isDragging ? 0 : 1}}>
+        <this.getGraphicalCard />
+      </div>
+    )
   }
 
   /**
@@ -125,7 +173,7 @@ class Document {
   /**
    * Returns the JSX component that shows this document as a full article (as opposed to a preview).
    */
-  getGraphicalArticle(): JSX.Element {
+  getGraphicalArticle = (): JSX.Element => {
     return (
       <div tw="flex flex-col">
         <h1>{this.title}</h1>

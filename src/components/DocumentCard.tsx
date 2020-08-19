@@ -5,7 +5,7 @@ import tw from 'twin.macro';
 
 const StylizedCard = styled.div`
   background-color: ${theme.PASTEL_ORANGE};
-  ${tw`shadow w-full p-2 m-2`}
+  ${tw`w-full p-2 my-2 rounded box-border`}
 `;
 
 /**
