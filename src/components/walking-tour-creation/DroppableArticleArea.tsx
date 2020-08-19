@@ -11,19 +11,17 @@ import FormTextArea from '../FormTextArea';
  * A card showing the preview of a document with an input box allowing a user to enter directions to
  * this particular document location.
  */
-const DocumentWithLocationInput = ({document}: {
-  document: Document
+const DocumentWithLocationInput = ({document, onInputChange}: {
+  document: Document,
+  onInputChange: (e: React.ChangeEvent<HTMLTextAreaElement>) => void
 }): JSX.Element => {
   return (
     <div tw="flex flex-col">
       <FormTextArea 
         label="Add directions from the last specified point" 
-        placeholder="Walking directions..." />
-      <document.getDraggableCard 
-        cardType={DraggableCardType.WALKING_TOUR_ENTRY}
-        onDragEnd={(item, monitor) => {
-
-        }} />
+        placeholder="Walking directions..."
+        onChange={onInputChange} />
+      <document.getDraggableCard cardType={DraggableCardType.WALKING_TOUR_ENTRY} />
     </div>
   );
 }
@@ -115,14 +113,20 @@ const DroppableArticleArea =
     ]);
   }
 
+  const editEntryAt = (entry: WalkingTourEntry, idx: number): void => {
+    setWalkingTourEntries([
+      ...walkingTourEntries.slice(0, idx),
+      entry,
+      ...walkingTourEntries.slice(idx + 1)
+    ]);
+  }
+
   const deleteDocumentFromList = (id: string) => {
     setLoadedDocuments(
       loadedDocuments.filter(doc => doc.id !== id)
     );
   }
 
-  // TODO doesn't really feel like deleting an article from the list of articles should be the drop
-  // areas job but I'm too tired to think about what the right thing to do is
   return (
     <div tw="flex flex-col">
       <h2 tw="mb-0">Create a Walking Tour</h2>
@@ -133,7 +137,16 @@ const DroppableArticleArea =
         {walkingTourEntries.map((entry, idx) => {
           return (
             <div key={entry.article.id}>
-              <DocumentWithLocationInput document={entry.article} />
+              <DocumentWithLocationInput 
+                document={entry.article}
+                onInputChange={(e) => {
+                  let updatedDirections = e.target.value;
+                  editEntryAt({
+                    directionsFromLastPoint: updatedDirections,
+                    article: entry.article
+                  }, idx);
+                  console.log(walkingTourEntries);
+                }} />
               <DropArea 
                 index={idx + 1} 
                 addEntryAt={addEntryAt} 
