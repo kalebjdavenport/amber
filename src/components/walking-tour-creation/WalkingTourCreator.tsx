@@ -24,11 +24,11 @@ const WalkingTourCreator = (): JSX.Element => {
   return (
     <DndProvider backend={HTML5Backend}>
       <div tw="flex flex-row">
-        <div tw="mx-2 sticky top-0">
+        <div tw="mx-2 sticky top-0 w-2/4">
           <DroppableArticleArea 
             {...{loadedDocuments, setLoadedDocuments, walkingTourEntries, setWalkingTourEntries}} />
         </div>
-        <div tw="mx-2">
+        <div tw="mx-2 w-2/4">
           <DraggableArticleList 
             {...{loadedDocuments, setLoadedDocuments, walkingTourEntries, setWalkingTourEntries}} />
         </div>

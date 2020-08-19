@@ -10,3 +10,4 @@ export default {
 }
 
 export const Default = () => <ComposerHeader heading="Example Composer" />
+export const PublishEnabled = () => <ComposerHeader heading="Example Composer" publishEnabled />

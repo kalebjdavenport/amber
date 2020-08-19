@@ -8,7 +8,8 @@ const PublishButton = tw.button`
   text-white
   bg-green-600
   hover:bg-green-700
-  disabled:bg-green-100
+  disabled:(cursor-not-allowed opacity-50)
+  disabled:hover:bg-green-600
   font-bold
   p-2
   font-sans
@@ -24,9 +25,11 @@ const PublishButton = tw.button`
 /**
  * The header to be used on pages where a user can compose something a walking tour or article.
  * @param heading the heading for this composer page. I.e. "Article Composer"
+ * @param publishEnabled whether or not the publish button should be enabled or not
  */
-const ComposerHeader = ({heading}: {
-  heading: string
+const ComposerHeader = ({heading, publishEnabled = false}: {
+  heading: string,
+  publishEnabled?: boolean
 }) => {
   const [published, setPublished] = useState(false);
 
@@ -41,7 +44,7 @@ const ComposerHeader = ({heading}: {
         <div tw="flex-auto"></div>
         <div tw="flex flex-row items-center">
           <div>Status: {published ? "Published" : "Not Published"}</div>
-          <PublishButton onClick={() => setPublished(true)}>
+          <PublishButton onClick={() => setPublished(true)} disabled={!publishEnabled || published}>
             <CloudUploadIcon />
             <div tw="ml-1">Publish</div>
           </PublishButton>

@@ -132,11 +132,13 @@ const DroppableArticleArea =
       <h2 tw="mb-0">Create a Walking Tour</h2>
       <p tw="m-0">Click, drag, and drop the articles on the right onto the area below
          to add them to your walking tour.</p>
+      <p tw="mt-2"> To delete an article from your walking tour, drag the article back into the list 
+      of articles on the right</p>
       <StartEndWrapper>
         <DropArea index={0} addEntryAt={addEntryAt} deleteDocument={deleteDocumentFromList} />
         {walkingTourEntries.map((entry, idx) => {
           return (
-            <div key={entry.article.id}>
+            <div key={entry.article.id} tw="w-full">
               <DocumentWithLocationInput 
                 document={entry.article}
                 onInputChange={(e) => {
@@ -145,7 +147,6 @@ const DroppableArticleArea =
                     directionsFromLastPoint: updatedDirections,
                     article: entry.article
                   }, idx);
-                  console.log(walkingTourEntries);
                 }} />
               <DropArea 
                 index={idx + 1} 
