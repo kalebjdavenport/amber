@@ -1,6 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react';
 import mapboxgl from 'mapbox-gl';
 import "mapbox-gl/dist/mapbox-gl.css";
+import tw from 'twin.macro';
 
 /**
  * A component that sets up the MapboxMap and provides a callback to act on the map during the
@@ -50,14 +51,9 @@ const MapboxMap = ({handleInitialRender, center = [0, 0], zoom = 5}: {
   }, []);
 
   return (
-      <div 
-        ref={el => {mapContainer.current = el}}
-        style={{
-          width: "100%",
-          height: "100%",
-          overflow: "visible",
-        }} 
-      />
+    <div style={tw`w-full h-full flex-grow flex-1 absolute top-0 left-0`}>
+      <div style={tw`h-full`} ref={el => {mapContainer.current = el}}/>
+    </div>
   );
 }
 

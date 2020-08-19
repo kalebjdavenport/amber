@@ -17,10 +17,11 @@ const DocumentsMap = ({documents}: {
   }
 
   return (
-    <div tw="relative flex flex-col items-center">
+    <div tw="relative flex flex-col items-center w-full h-full flex-auto">
       <div css={[tw`absolute rounded-full px-6 z-50 bg-white p-2 shadow`, {top: '15px'}]}>
       Click on a marker to bring up information!
       </div>
+      <div>Hi<br />Hi<br />Hi<br />Hi<br />Hi<br /></div>
       <MapboxMap handleInitialRender={addMarkersAndPopupsToMap} />
     </div>
   );
