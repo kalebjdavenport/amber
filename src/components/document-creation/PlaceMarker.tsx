@@ -47,7 +47,7 @@ const PlaceMarker = ({documentBuilder, done}: DocumentCreationInputProps) => {
   }
 
   return (
-    <div style={tw`flex flex-col items-center`}>
+    <div style={tw`flex flex-col items-center h-full w-full`}>
       <div style={tw`text-center`}>
         <h1>Choose a location for your article</h1>
         <h2>Click anywhere on the map to place a marker. Click again to re-place your marker.</h2>

@@ -12,7 +12,10 @@ import WriteArticle from '../document-creation/WriteArticle';
 export default {
   component: DocumentCreationForm,
   title: 'DocumentCreationForm',
-  excludeStories: /.*Data$/
+  excludeStories: /.*Data$/,
+  parameters: {
+		layout: 'fullscreen'
+	}
 }
 
 export const FormItemInputData : DocumentCreationInputProps = {
@@ -22,10 +25,10 @@ export const FormItemInputData : DocumentCreationInputProps = {
 
 export const FormData = {
   screens: [
+    PlaceMarker,
     LoreOrCredible,
     AddTags,
     SelectArticleType,
-    PlaceMarker,
     WriteArticle
   ],
   handleBackOnFirstFormPage: () => { action('handleBackOnFirstFormPage')() },

@@ -21,7 +21,7 @@ const DocumentsMap = ({documents}: {
       <div css={[tw`absolute rounded-full px-6 z-50 bg-white p-2 shadow`, {top: '15px'}]}>
       Click on a marker to bring up information!
       </div>
-      <div>Hi<br />Hi<br />Hi<br />Hi<br />Hi<br /></div>
+      <div tw="flex-1">{/* This div fills vertical space while map is loading */}</div>
       <MapboxMap handleInitialRender={addMarkersAndPopupsToMap} />
     </div>
   );

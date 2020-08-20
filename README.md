@@ -60,6 +60,8 @@ the style prop with twin.macro as it limits the functionality of twin.macro incl
 to use CSS selectors such as focus or hover.
 
 ```javascript
+// **Important** - the package 'twin.macro' must be imported for the tw prop to work, even though 
+// this won't display any warnings without the import
 const MyDiv = () => <input tw="w-full shadow bg-black" />;
 ```
 

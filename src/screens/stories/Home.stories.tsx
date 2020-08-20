@@ -1,5 +1,5 @@
 import React from 'react';
-import HomeScreen from '../HomeScreen';
+import HomeScreen from '../Home';
 
 export default {
   component: HomeScreen,

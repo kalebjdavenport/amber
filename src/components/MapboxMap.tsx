@@ -50,11 +50,7 @@ const MapboxMap = ({handleInitialRender, center = [0, 0], zoom = 5}: {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  return (
-    <div style={tw`w-full h-full flex-grow flex-1 absolute top-0 left-0`}>
-      <div style={tw`h-full`} ref={el => {mapContainer.current = el}}/>
-    </div>
-  );
+  return <div style={tw`h-full w-full`} ref={el => {mapContainer.current = el}}/>;
 }
 
 export default MapboxMap;

@@ -9,7 +9,7 @@ const StyledForm = styled.form`
   ${tw`
     flex 
     flex-col
-    m-1
+    p-2
     rounded
     w-full
   `}

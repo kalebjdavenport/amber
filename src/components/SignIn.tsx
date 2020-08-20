@@ -8,7 +8,7 @@ const StyledForm = styled.form`
   ${tw`
     flex 
     flex-col
-    m-1
+    p-2
     bg-white
     w-full
   `}
